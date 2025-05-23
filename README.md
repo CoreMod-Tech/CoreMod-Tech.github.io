@@ -1,1 +1,1 @@
-# coremod.github.io
+# COREMOD
