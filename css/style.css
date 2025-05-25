@@ -1,0 +1,81 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background: #000306;
+    color: #00ffff;
+    font-family: monospace;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.Logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: #000306; /* dark background */
+  border-bottom: 1px solid #00ff00;
+  font-family: monospace;
+  color: #00ff00;
+}
+
+.mainoption {
+  text-align: left;
+  margin-left: 0;
+  padding-left: 10px; /* optional: space from the edge */
+}
+
+.option {
+  font-family: monospace;
+  color: #00ff00;
+  background-color: #000;
+  padding: 40px;
+  border: 1px solid #00ff00;
+  width: fit-content;
+  margin-left: 10px; /* aligns it to left */
+  text-align: left;
+}
+
+
+.option a {
+  font-family: monospace;
+  color: #00ff00;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.option p {
+  margin: 5px 0;
+  white-space: pre; /* keeps spacing exact */
+  line-height: 1.5;
+}
+
+.option a::before {
+  content: " ";
+  transition: 0.2s;
+}
+
+.option a:hover::before {
+  content: ">";
+  color: #00ff00;
+  margin-right: 4px;
+}
+
+hr {
+  border: none;
+  display: block;
+  height: 2px;
+  background-color: #00ff00; /* glowing green line vibe */
+  margin: 1rem 0;
+}
