@@ -691,6 +691,10 @@ body {
   min-height: 100px;
 }
 
+.h-captcha {
+  margin-bottom: 16px;
+}
+
 .form-status {
   margin-top: 12px;
   font-size: 0.82rem;
