@@ -86,3 +86,13 @@ git push
 - Email: coremod.tech@gmail.com
 - Line: @059qaouj
 - Facebook: [facebook.com/CoreModTech](https://www.facebook.com/CoreModTech/)
+
+---
+
+## License
+
+Copyright (c) 2025 CoreMod-Tech. All rights reserved.
+
+This project is **not open source**. Source code is publicly visible on GitHub for hosting purposes only. No part of this code may be copied, modified, distributed, or reused without prior written permission from the owner.
+
+See [LICENSE](./LICENSE) for full terms.
