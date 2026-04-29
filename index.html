@@ -1,40 +1,331 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CoreMod — PC repair, custom builds, and remote tech support in Thailand. We Build. We Fix. You Play." />
+  <link rel="icon" type="image/png" href="images/LogoV1nobg.png">
+  <link rel="apple-touch-icon" href="images/LogoV1nobg.png">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js"></script>
-  <title>Coremod — System Ready</title>
+  <title>CoreMod — System Ready.</title>
 </head>
-
 <body>
-<!--Logo and slogan-->
- <div class="Logo">
-  <img src="images/LogoV1nobg.png" alt="Logo" width="80" height="80">
-  <p class="fixtext">We Build. We Fix. You Play.</p>
- </div>
 
-<div class="mainoption">
-<h1 class="coremodtext">&gt;&gt; coremod --init</h1>
-<h2 class="systemreadytext">System Ready.</h2>
- <!--Option-->
-  <div class="option">
-  <p>[Choose The Option]</p>
-  <hr>
+  <div class="scanlines"></div>
 
-  <p><a href="#home">[0] Home</a></p>
-  <p><a href="#about">[1] About Us</a></p>
-  <p><a href="#services">[2] Services</a></p>
-  <p><a href="#contact">[3] Contact</a></p>
-  <p><a href="#projects">[4] Projects</a></p>
-  <p><a href="#slogan">[5] System Ready</a></p>
-  <hr>
-  </div>
-</div>
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <img src="images/LogoV1nobg.png" alt="CoreMod" width="36" height="36">
+      <span class="nav-brand">COREMOD</span>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="#home"    data-i18n="nav-home">[0] Home</a>
+      <a href="#about"   data-i18n="nav-about">[1] About</a>
+      <a href="#services"data-i18n="nav-services">[2] Services</a>
+      <a href="#projects"data-i18n="nav-projects">[3] Projects</a>
+      <a href="#contact" data-i18n="nav-contact">[4] Contact</a>
+    </div>
+    <div class="nav-right">
+      <button class="lang-toggle" id="langBtn" onclick="toggleLang()">TH</button>
+      <button class="nav-toggle" onclick="toggleNav()">[ MENU ]</button>
+    </div>
+  </nav>
 
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="terminal-window">
+      <div class="terminal-bar">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green-dot"></span>
+        <span class="terminal-title">coremod@system:~</span>
+      </div>
+      <div class="terminal-body">
+        <p class="terminal-line" id="t1"></p>
+        <p class="terminal-line" id="t2"></p>
+        <p class="terminal-line" id="t3"></p>
+        <p class="terminal-line" id="t4"></p>
+        <p class="terminal-line" id="t5"><span class="cursor">_</span></p>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <img src="images/LogoV1nobg.png" alt="CoreMod Logo" class="hero-logo">
+      <h1 class="hero-title glitch" data-text="COREMOD">COREMOD</h1>
+      <p class="hero-slogan" data-i18n="hero-slogan">We Build. We Fix. You Play.</p>
+      <div class="hero-status">
+        <span class="status-dot"></span>
+        <span data-i18n="hero-status">System Ready.</span>
+      </div>
+      <div class="hero-buttons">
+        <a href="#services" class="btn btn-primary"  data-i18n="btn-services">[ View Services ]</a>
+        <a href="#contact"  class="btn btn-secondary" data-i18n="btn-contact">[ Contact Us ]</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="section-header">
+      <span class="section-prefix">&gt;&gt;</span>
+      <h2>coremod --about</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-card fade-in">
+        <div class="card-tag">[SYS]</div>
+        <h3 data-i18n="about-card1-title">Who We Are</h3>
+        <p data-i18n="about-card1-text">CoreMod is a tech brand built around repairing and building computers — hardware and software. Not a faceless shop. A trusted creator who educates while we fix.</p>
+      </div>
+      <div class="about-card fade-in">
+        <div class="card-tag">[MIS]</div>
+        <h3 data-i18n="about-card2-title">Our Mission</h3>
+        <p data-i18n="about-card2-text">Make quality PC service accessible and affordable for Thai students, gamers, and small business owners. No overpricing. No confusion. Just honest tech help.</p>
+      </div>
+      <div class="about-card fade-in">
+        <div class="card-tag">[VAL]</div>
+        <h3 data-i18n="about-card3-title">Our Values</h3>
+        <p data-i18n="about-card3-text">Education first. Transparency always. We explain what's wrong, why it happened, and how to prevent it — confident customers are better customers.</p>
+      </div>
+    </div>
+
+    <div class="stats-bar">
+      <div class="stat">
+        <span class="stat-num">100฿</span>
+        <span class="stat-label" data-i18n="stat-label-1">Starting Price</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">5+</span>
+        <span class="stat-label" data-i18n="stat-label-2">Service Types</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">100%</span>
+        <span class="stat-label" data-i18n="stat-label-3">Remote Capable</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <div class="section-header">
+      <span class="section-prefix">&gt;&gt;</span>
+      <h2>coremod --services</h2>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card fade-in">
+        <div class="service-tag">[01]</div>
+        <h3 data-i18n="svc1-title">PC Repair &amp; Diagnostics</h3>
+        <p data-i18n="svc1-desc">Hardware troubleshooting, dust cleaning, thermal paste, power/boot fixes, Windows reinstall, driver setup, BIOS config.</p>
+        <div class="service-price">
+          <span class="price-from" data-i18n="price-from">FROM</span>
+          <span class="price-val">100฿</span>
+        </div>
+        <ul class="service-list">
+          <li data-i18n="svc1-li1">▸ Initial check — 100฿</li>
+          <li data-i18n="svc1-li2">▸ Cleaning + thermal paste — 300–400฿</li>
+          <li data-i18n="svc1-li3">▸ Hardware repair — 300฿</li>
+          <li data-i18n="svc1-li4">▸ Windows reinstall — 300–500฿</li>
+        </ul>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-tag">[02]</div>
+        <h3 data-i18n="svc2-title">Custom PC Building</h3>
+        <p data-i18n="svc2-desc">Budget gaming builds, second-hand builds, student and office bundles. Personalized to your needs and budget.</p>
+        <div class="service-price">
+          <span class="price-from" data-i18n="price-consult">CONSULT</span>
+          <span class="price-val" data-i18n="price-free">FREE</span>
+        </div>
+        <ul class="service-list">
+          <li data-i18n="svc2-li1">▸ Budget gaming builds</li>
+          <li data-i18n="svc2-li2">▸ 2nd-hand part sourcing</li>
+          <li data-i18n="svc2-li3">▸ Student / office setups</li>
+          <li data-i18n="svc2-li4">▸ Personalized builds</li>
+        </ul>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-tag">[03]</div>
+        <h3 data-i18n="svc3-title">Remote Tech Support</h3>
+        <p data-i18n="svc3-desc">Online help via AnyDesk. Windows optimization, virus removal, lag fixes, software installs, game settings tuning.</p>
+        <div class="service-price">
+          <span class="price-from" data-i18n="price-from">FROM</span>
+          <span class="price-val">100฿</span>
+        </div>
+        <ul class="service-list">
+          <li data-i18n="svc3-li1">▸ PC cleanup / speedup — 100–300฿</li>
+          <li data-i18n="svc3-li2">▸ Virus removal — 300฿</li>
+          <li data-i18n="svc3-li3">▸ Software install — 300฿</li>
+          <li data-i18n="svc3-li4">▸ Game optimization</li>
+        </ul>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-tag">[04]</div>
+        <h3 data-i18n="svc4-title">Upgrades &amp; Storage</h3>
+        <p data-i18n="svc4-desc">RAM, SSD, HDD, CPU, GPU upgrades. Data recovery for lost files.</p>
+        <div class="service-price">
+          <span class="price-from" data-i18n="price-from">FROM</span>
+          <span class="price-val">300฿</span>
+        </div>
+        <ul class="service-list">
+          <li data-i18n="svc4-li1">▸ RAM / SSD / HDD upgrade — 300฿</li>
+          <li data-i18n="svc4-li2">▸ CPU / GPU swap — 300฿</li>
+          <li data-i18n="svc4-li3">▸ Data recovery — 500฿</li>
+        </ul>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-tag">[05]</div>
+        <h3 data-i18n="svc5-title">DIY Guide Packs</h3>
+        <p data-i18n="svc5-desc">Digital PDF + video guides. Build a PC under 5000฿, speed up your PC, how to choose safe 2nd-hand parts.</p>
+        <div class="service-price">
+          <span class="price-from" data-i18n="price-label">PRICE</span>
+          <span class="price-val">TBA</span>
+        </div>
+        <ul class="service-list">
+          <li data-i18n="svc5-li1">▸ PDF + video format</li>
+          <li data-i18n="svc5-li2">▸ Budget build guides</li>
+          <li data-i18n="svc5-li3">▸ Safety checklists</li>
+          <li data-i18n="svc5-li4">▸ Digital delivery</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="section-header">
+      <span class="section-prefix">&gt;&gt;</span>
+      <h2>coremod --projects</h2>
+    </div>
+
+    <div class="projects-terminal">
+      <div class="terminal-bar">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green-dot"></span>
+        <span class="terminal-title">projects.log</span>
+      </div>
+      <div class="projects-log">
+        <div class="log-row fade-in">
+          <span class="log-status active">[ACTIVE]</span>
+          <span class="log-name" data-i18n="proj1-name">CoreMod Website v1</span>
+          <span class="log-desc" data-i18n="proj1-desc">Terminal-themed brand hub — this site.</span>
+        </div>
+        <div class="log-row fade-in">
+          <span class="log-status building">[BUILD]</span>
+          <span class="log-name" data-i18n="proj2-name">Budget Build Guide Pack</span>
+          <span class="log-desc" data-i18n="proj2-desc">PDF + video guide for PC build under 5000฿.</span>
+        </div>
+        <div class="log-row fade-in">
+          <span class="log-status planned">[PLAN]</span>
+          <span class="log-name" data-i18n="proj3-name">Repair Tracker Portal</span>
+          <span class="log-desc" data-i18n="proj3-desc">Track your repair progress online. Coming soon.</span>
+        </div>
+        <div class="log-row fade-in">
+          <span class="log-status planned">[PLAN]</span>
+          <span class="log-name" data-i18n="proj4-name">2nd-Hand Parts Marketplace</span>
+          <span class="log-desc" data-i18n="proj4-desc">Curated secondhand PC parts dropshipping.</span>
+        </div>
+        <div class="log-row">
+          <span class="log-status blink-cursor">[_]</span>
+          <span class="log-name" data-i18n="proj5-name">More incoming...</span>
+          <span class="log-desc" data-i18n="proj5-desc">System expanding.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="section-header">
+      <span class="section-prefix">&gt;&gt;</span>
+      <h2>coremod --contact</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info-card fade-in">
+        <h3 data-i18n="contact-heading">// Reach Us</h3>
+        <div class="contact-row">
+          <span class="contact-key">[EMAIL]</span>
+          <span class="contact-val">coremod.tech@gmail.com</span>
+        </div>
+        <div class="contact-row">
+          <span class="contact-key">[STATUS]</span>
+          <span class="contact-val online" data-i18n="contact-status">[AVAILABLE] — Response within 24h</span>
+        </div>
+        <div class="contact-row">
+          <span class="contact-key">[LINE]</span>
+          <span class="contact-val">@059qaouj</span>
+        </div>
+        <div class="contact-row">
+          <span class="contact-key">[FACEBOOK]</span>
+          <a class="contact-val contact-link" href="https://www.facebook.com/CoreModTech/" target="_blank" rel="noopener">facebook.com/CoreModTech</a>
+        </div>
+        <div class="contact-row">
+          <span class="contact-key">[REGION]</span>
+          <span class="contact-val" data-i18n="contact-region">Thailand</span>
+        </div>
+        <div class="contact-row">
+          <span class="contact-key">[LANG]</span>
+          <span class="contact-val">Thai / English</span>
+        </div>
+      </div>
+
+      <form class="contact-form fade-in" id="contactForm">
+        <input type="hidden" name="access_key" value="2505f554-d45b-4d86-ab9c-5a8548ac9aa7">
+        <input type="hidden" name="subject" value="CoreMod — New Inquiry">
+        <input type="hidden" name="from_name" value="CoreMod Website">
+        <input type="hidden" name="redirect" value="false">
+        <input type="checkbox" name="botcheck" style="display:none">
+
+        <div class="form-group">
+          <label data-i18n="form-name-label">// Your Name</label>
+          <input type="text" name="name" data-i18n-ph="form-name-ph" placeholder="Enter name..." required>
+        </div>
+        <div class="form-group">
+          <label data-i18n="form-email-label">// Your Email</label>
+          <input type="email" name="email" data-i18n-ph="form-email-ph" placeholder="Enter email..." required>
+        </div>
+        <div class="form-group">
+          <label data-i18n="form-service-label">// Service Needed</label>
+          <select name="service">
+            <option value="" data-i18n="form-opt-0">-- Select service --</option>
+            <option data-i18n="form-opt-1">PC Repair &amp; Diagnostics</option>
+            <option data-i18n="form-opt-2">Custom PC Build</option>
+            <option data-i18n="form-opt-3">Remote Tech Support</option>
+            <option data-i18n="form-opt-4">Upgrades &amp; Storage</option>
+            <option data-i18n="form-opt-5">DIY Guide Pack</option>
+            <option data-i18n="form-opt-6">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label data-i18n="form-msg-label">// Message</label>
+          <textarea name="message" rows="4" data-i18n-ph="form-msg-ph" placeholder="Describe your issue or request..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" id="submitBtn" data-i18n="form-submit">[ Send Message ]</button>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <img src="images/LogoV1nobg.png" alt="CoreMod" width="28" height="28">
+      <span>COREMOD</span>
+    </div>
+    <p class="footer-slogan" data-i18n="footer-slogan">We Build. We Fix. You Play.</p>
+    <p class="footer-copy" data-i18n="footer-copy">© 2025 CoreMod — System Ready.</p>
+  </footer>
+
+  <button class="scroll-top" id="scrollTop" onclick="scrollToTop()">[ ^ ]</button>
+
+  <script src="js/script.js"></script>
 </body>
-
 </html>
