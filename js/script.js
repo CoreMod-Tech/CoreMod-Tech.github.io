@@ -8,6 +8,11 @@ const T = {
     'nav-services':'[2] Services',
     'nav-projects':'[3] Projects',
     'nav-contact': '[4] Contact',
+    'nav-links':   '[5] Links',
+
+    'links-tagline': 'Find us on every platform.',
+    'link-soon':     '(soon)',
+    'links-note':    "> All channels monitored. Pick your platform — we'll respond.",
 
     'hero-slogan': 'We Build. We Fix. You Play.',
     'hero-status': 'System Ready.',
@@ -104,6 +109,11 @@ const T = {
     'nav-services':'[2] บริการ',
     'nav-projects':'[3] โปรเจกต์',
     'nav-contact': '[4] ติดต่อ',
+    'nav-links':   '[5] ลิงก์',
+
+    'links-tagline': 'พบเราได้ทุกแพลตฟอร์ม',
+    'link-soon':     '(เร็วๆ นี้)',
+    'links-note':    '> ทุกช่องทางพร้อมตอบกลับ เลือกแพลตฟอร์มของคุณได้เลย',
 
     'hero-slogan': 'เราสร้าง เราซ่อม คุณเล่น',
     'hero-status': 'ระบบพร้อม',
@@ -316,7 +326,7 @@ const form       = document.getElementById('contactForm');
 const submitBtn  = document.getElementById('submitBtn');
 const formStatus = document.getElementById('formStatus');
 
-form.addEventListener('submit', async (e) => {
+if (form) form.addEventListener('submit', async (e) => {
   e.preventDefault();
 
   const origText = submitBtn.textContent;
