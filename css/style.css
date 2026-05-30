@@ -16,7 +16,7 @@
   --dim-cyan: #00cccc;
   --gray:     #aaaaaa;
   --dim:      #444;
-  --font:     'Courier New', Courier, monospace;
+  --font:     'Courier New', Courier, 'IBM Plex Sans Thai', monospace;
 }
 
 html { scroll-behavior: smooth; }
