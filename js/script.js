@@ -3,233 +3,238 @@
 // =====================
 const T = {
   en: {
-    'nav-home':    '[0] Home',
-    'nav-about':   '[1] About',
-    'nav-services':'[2] Services',
-    'nav-projects':'[3] Projects',
-    'nav-contact': '[4] Contact',
-    'nav-links':   '[5] Links',
+    'nav-home':     'Home',
+    'nav-about':    'About',
+    'nav-services': 'Services',
+    'nav-contact':  'Contact',
+    'nav-links':    'Links',
 
-    'links-tagline': 'Find us on every platform.',
-    'link-soon':     '(soon)',
-    'links-note':    "> All channels monitored. Pick your platform — we'll respond.",
+    'links-title':   'Contact channels',
+    'links-tagline': 'Message us on whichever app you use.',
+    'link-soon':     'Coming soon',
+    'link-phone':    'Phone',
+    'links-note':    'We reply within 24 hours on every channel.',
 
-    'hero-slogan': 'We Build. We Fix. You Play.',
-    'hero-status': 'System Ready.',
-    'btn-services':'[ View Services ]',
-    'btn-contact': '[ Contact Us ]',
+    'hero-title':   "PC trouble? We'll sort it.",
+    'hero-slogan':  'We Build. We Fix. You Play.',
+    'btn-services': 'See services and prices',
+    'btn-contact':  'Contact us',
 
-    'about-card1-title': 'Who We Are',
-    'about-card1-text':  'CoreMod is a tech brand built around repairing and building computers — hardware and software. Not a faceless shop. A trusted creator who educates while we fix.',
-    'about-card2-title': 'Our Mission',
-    'about-card2-text':  'Make quality PC service accessible and affordable for Thai students, gamers, and small business owners. No overpricing. No confusion. Just honest tech help.',
-    'about-card3-title': 'Our Values',
-    'about-card3-text':  "Education first. Transparency always. We explain what's wrong, why it happened, and how to prevent it — confident customers are better customers.",
-    'stat-label-1': 'Starting Price',
-    'stat-label-2': 'Service Types',
-    'stat-label-3': 'Remote Capable',
+    'about-title':       'About us',
+    'about-card1-title': 'Who we are',
+    'about-card1-text':  'CoreMod repairs and builds PCs, hardware and software. We explain the problem while we fix it, so you know what was wrong with your machine.',
+    'about-card2-title': 'Who we work for',
+    'about-card2-text':  'Students, gamers and small shops in Thailand who want good work at a price they can pay. Fair prices, no overcharging.',
+    'about-card3-title': 'How we work',
+    'about-card3-text':  'We tell you what broke, why it broke, and how to stop it happening again.',
+    'stat-label-1': 'Check-up from',
+    'stat-num-2':   '24h',
+    'stat-label-2': 'Reply time',
+    'stat-label-3': 'Services',
 
-    'svc1-title': 'PC Repair & Diagnostics',
-    'svc1-desc':  'Hardware troubleshooting, dust cleaning, thermal paste, power/boot fixes, Windows reinstall, driver setup, BIOS config.',
+    'services-title': 'Services and prices',
+
+    'svc1-title': 'PC and Laptop Repair',
+    'svc1-desc':  'Hardware troubleshooting, dust cleaning, thermal paste, power and boot fixes, Windows reinstall, drivers, BIOS setup.',
     'svc1-li1': '▸ Initial check — 100฿',
     'svc1-li2': '▸ Cleaning + thermal paste — 300–400฿',
     'svc1-li3': '▸ Hardware repair — 300฿',
     'svc1-li4': '▸ Windows reinstall — 300–500฿',
 
-    'svc2-title': 'Custom PC Building',
-    'svc2-desc':  'Budget gaming builds, second-hand builds, student and office bundles. Personalized to your needs and budget.',
+    'svc2-title': 'Custom PC Builds',
+    'svc2-desc':  'Budget gaming PCs, second-hand builds, student and office setups. Specced to your budget.',
     'svc2-li1': '▸ Budget gaming builds',
-    'svc2-li2': '▸ 2nd-hand part sourcing',
-    'svc2-li3': '▸ Student / office setups',
-    'svc2-li4': '▸ Personalized builds',
+    'svc2-li2': '▸ Second-hand parts sourcing',
+    'svc2-li3': '▸ Student and office setups',
+    'svc2-li4': '▸ Built to your spec',
 
-    'svc3-title': 'Remote Tech Support',
-    'svc3-desc':  'Online help via AnyDesk. Windows optimization, virus removal, lag fixes, software installs, game settings tuning.',
-    'svc3-li1': '▸ PC cleanup / speedup — 100–300฿',
+    'svc3-title': 'Remote Support',
+    'svc3-desc':  'Help over AnyDesk: Windows tune-up, virus removal, lag fixes, software installs, game settings.',
+    'svc3-li1': '▸ Cleanup / speed-up — 100–300฿',
     'svc3-li2': '▸ Virus removal — 300฿',
-    'svc3-li3': '▸ Software install — 300฿',
-    'svc3-li4': '▸ Game optimization',
+    'svc3-li3': '▸ Software install — 300–500฿',
+    'svc3-li4': '▸ Game settings',
 
-    'svc4-title': 'Upgrades & Storage',
-    'svc4-desc':  'RAM, SSD, HDD, CPU, GPU upgrades. Data recovery for lost files.',
+    'svc4-title': 'Upgrades and Data Recovery',
+    'svc4-desc':  'RAM, SSD, HDD, CPU and GPU upgrades. Recovery for lost files.',
     'svc4-li1': '▸ RAM / SSD / HDD upgrade — 300฿',
     'svc4-li2': '▸ CPU / GPU swap — 300฿',
     'svc4-li3': '▸ Data recovery — 500฿',
 
     'svc5-title': 'DIY Guide Packs',
-    'svc5-desc':  'Digital PDF + video guides. Build a PC under 5000฿, speed up your PC, how to choose safe 2nd-hand parts.',
-    'svc5-li1': '▸ PDF + video format',
+    'svc5-desc':  'PDF and video guides: build a PC under 5,000฿, speed up your PC, pick second-hand parts safely.',
+    'svc5-li1': '▸ PDF + video',
     'svc5-li2': '▸ Budget build guides',
-    'svc5-li3': '▸ Safety checklists',
-    'svc5-li4': '▸ Digital delivery',
+    'svc5-li3': '▸ Second-hand parts checklists',
+    'svc5-li4': '▸ Digital download',
 
-    'price-from':    'FROM',
-    'price-consult': 'CONSULT',
-    'price-free':    'FREE',
-    'price-label':   'PRICE',
+    'svc6-title': 'Arduino / ESP32 Projects',
+    'svc6-desc':  'Embedded and IoT work to order: Arduino, ESP32, sensors.',
+    'svc6-li1': '▸ Arduino / ESP32',
+    'svc6-li2': '▸ Sensors and IoT',
+    'svc6-li3': '▸ Built to your spec',
 
-    'proj1-name': 'CoreMod Website v1',
-    'proj1-desc': 'Terminal-themed brand hub — this site.',
-    'proj2-name': 'Budget Build Guide Pack',
-    'proj2-desc': 'PDF + video guide for PC build under 5000฿.',
-    'proj3-name': 'Repair Tracker Portal',
-    'proj3-desc': 'Track your repair progress online. Coming soon.',
-    'proj4-name': '2nd-Hand Parts Marketplace',
-    'proj4-desc': 'Curated secondhand PC parts dropshipping.',
-    'proj5-name': 'More incoming...',
-    'proj5-desc': 'System expanding.',
+    'price-from':    'From',
+    'price-consult': 'Consultation',
+    'price-free':    'Free',
+    'price-label':   'Price',
+    'price-quote':   'Per job',
+    'price-tba':     'TBA',
 
-    'contact-heading': '// Reach Us',
-    'contact-status':  '[AVAILABLE] — Response within 24h',
-    'contact-region':  'Thailand',
+    'contact-title':  'Contact',
+    'contact-status': 'Within 24 hours',
+    'contact-region': 'Chiang Mai (Fang, Mae Ai). Remote support anywhere in Thailand.',
 
-    'form-name-label':    '// Your Name',
-    'form-email-label':   '// Your Email',
-    'form-service-label': '// Service Needed',
-    'form-msg-label':     '// Message',
-    'form-name-ph':    'Enter name...',
-    'form-email-ph':   'Enter email...',
-    'form-msg-ph':     'Describe your issue or request...',
-    'form-submit': '[ Send Message ]',
-    'form-opt-0': '-- Select service --',
-    'form-opt-1': 'PC Repair & Diagnostics',
+    'form-name-label':    'Your name',
+    'form-email-label':   'Your email',
+    'form-service-label': 'Service',
+    'form-msg-label':     "What's the problem?",
+    'form-msg-ph':        'e.g. Power light is on but the screen stays black',
+    'form-submit':  'Send message',
+    'form-sending': 'Sending...',
+    'form-ok':      "Message sent. We'll reply within 24 hours.",
+    'form-err':     "Couldn't send. Message us on LINE @059qaouj or Facebook instead.",
+    'form-opt-0': 'Choose a service',
+    'form-opt-1': 'PC and Laptop Repair',
     'form-opt-2': 'Custom PC Build',
-    'form-opt-3': 'Remote Tech Support',
-    'form-opt-4': 'Upgrades & Storage',
+    'form-opt-3': 'Remote Support',
+    'form-opt-4': 'Upgrades and Data Recovery',
     'form-opt-5': 'DIY Guide Pack',
     'form-opt-6': 'Other',
+    'form-opt-7': 'Arduino / ESP32 Project',
 
     'footer-slogan': 'We Build. We Fix. You Play.',
-    'footer-copy':   '© 2025 CoreMod — System Ready.',
   },
 
   th: {
-    'nav-home':    '[0] หน้าหลัก',
-    'nav-about':   '[1] เกี่ยวกับ',
-    'nav-services':'[2] บริการ',
-    'nav-projects':'[3] โปรเจกต์',
-    'nav-contact': '[4] ติดต่อ',
-    'nav-links':   '[5] ลิงก์',
+    'nav-home':     'หน้าแรก',
+    'nav-about':    'เกี่ยวกับเรา',
+    'nav-services': 'บริการ',
+    'nav-contact':  'ติดต่อ',
+    'nav-links':    'ลิงก์',
 
-    'links-tagline': 'พบเราได้ทุกแพลตฟอร์ม',
-    'link-soon':     '(เร็วๆ นี้)',
-    'links-note':    '> ทุกช่องทางพร้อมตอบกลับ เลือกแพลตฟอร์มของคุณได้เลย',
+    'links-title':   'ช่องทางติดต่อ',
+    'links-tagline': 'ใช้แอปไหนอยู่ ทักมาทางนั้นได้เลย',
+    'link-soon':     'เร็วๆ นี้',
+    'link-phone':    'โทร',
+    'links-note':    'ตอบกลับภายใน 24 ชม. ทุกช่องทาง',
 
-    'hero-slogan': 'เราสร้าง เราซ่อม คุณเล่น',
-    'hero-status': 'ระบบพร้อม',
-    'btn-services':'[ ดูบริการ ]',
-    'btn-contact': '[ ติดต่อเรา ]',
+    'hero-title':   'คอมมีปัญหา เราจัดการ',
+    'hero-slogan':  'เราประกอบ เราซ่อม คุณเล่น',
+    'btn-services': 'ดูบริการและราคา',
+    'btn-contact':  'ติดต่อเรา',
 
+    'about-title':       'เกี่ยวกับเรา',
     'about-card1-title': 'เราคือใคร',
-    'about-card1-text':  'CoreMod คือแบรนด์เทคโนโลยีที่เน้นการซ่อมและสร้างคอมพิวเตอร์ ทั้งฮาร์ดแวร์และซอฟต์แวร์ ไม่ใช่ร้านไม่มีชื่อ แต่เป็นผู้สร้างที่ไว้ใจได้ที่ให้ความรู้ขณะซ่อม',
-    'about-card2-title': 'พันธกิจของเรา',
-    'about-card2-text':  'ทำให้บริการพีซีคุณภาพดีเข้าถึงได้ในราคาไม่แพง สำหรับนักเรียน เกมเมอร์ และเจ้าของธุรกิจขนาดเล็กในไทย ไม่โก่งราคา ไม่สับสน แค่ความช่วยเหลือด้านเทคโนโลยีที่ซื่อสัตย์',
-    'about-card3-title': 'คุณค่าของเรา',
-    'about-card3-text':  'การศึกษาก่อนเสมอ ความโปร่งใสตลอดเวลา เราอธิบายสิ่งที่ผิดพลาด สาเหตุ และวิธีป้องกัน เพราะลูกค้าที่มั่นใจคือลูกค้าที่ดีกว่า',
-    'stat-label-1': 'ราคาเริ่มต้น',
-    'stat-label-2': 'ประเภทบริการ',
-    'stat-label-3': 'รองรับระยะไกล',
+    'about-card1-text':  'CoreMod รับซ่อมและประกอบคอม ทั้งฮาร์ดแวร์และซอฟต์แวร์ ซ่อมไปอธิบายไป ให้คุณรู้ว่าเครื่องเป็นอะไร',
+    'about-card2-title': 'ทำให้ใคร',
+    'about-card2-text':  'นักเรียน เกมเมอร์ และร้านค้าเล็กๆ ที่อยากได้งานดีในราคาที่จ่ายไหว ราคาตรงไปตรงมา ไม่โก่งราคา',
+    'about-card3-title': 'เราทำงานยังไง',
+    'about-card3-text':  'บอกว่าเสียตรงไหน เสียเพราะอะไร และทำยังไงไม่ให้เป็นอีก',
+    'stat-label-1': 'ตรวจเช็คเริ่มต้น',
+    'stat-num-2':   '24 ชม.',
+    'stat-label-2': 'ตอบกลับภายใน',
+    'stat-label-3': 'บริการ',
 
-    'svc1-title': 'ซ่อมและตรวจสอบพีซี',
-    'svc1-desc':  'แก้ไขปัญหาฮาร์ดแวร์ ทำความสะอาดฝุ่น เปลี่ยนซิลิโคน ซ่อมปัญหาไฟและการบูต ลง Windows ไดรเวอร์ ตั้งค่า BIOS',
+    'services-title': 'บริการและราคา',
+
+    'svc1-title': 'ซ่อมคอม / โน้ตบุ๊ก',
+    'svc1-desc':  'ตรวจปัญหาฮาร์ดแวร์ ล้างฝุ่น เปลี่ยนซิลิโคน แก้เปิดไม่ติด/บูตไม่ขึ้น ลง Windows และไดรเวอร์ ตั้งค่า BIOS',
     'svc1-li1': '▸ ตรวจเช็คเบื้องต้น — 100฿',
-    'svc1-li2': '▸ ทำความสะอาด + เปลี่ยนซิลิโคน — 300–400฿',
+    'svc1-li2': '▸ ล้างเครื่อง + เปลี่ยนซิลิโคน — 300–400฿',
     'svc1-li3': '▸ ซ่อมฮาร์ดแวร์ — 300฿',
     'svc1-li4': '▸ ลง Windows ใหม่ — 300–500฿',
 
-    'svc2-title': 'สร้างพีซีตามสั่ง',
-    'svc2-desc':  'สร้างพีซีเกมมิ่งราคาประหยัด พีซีมือสอง แพ็กสำหรับนักเรียน/สำนักงาน ปรับแต่งตามความต้องการและงบประมาณ',
-    'svc2-li1': '▸ สร้างพีซีเกมมิ่งงบประหยัด',
+    'svc2-title': 'ประกอบคอมตามงบ',
+    'svc2-desc':  'คอมเกมมิ่งงบประหยัด คอมมือสอง เครื่องสำหรับนักเรียนและออฟฟิศ จัดสเปกตามงบที่มี',
+    'svc2-li1': '▸ คอมเกมมิ่งงบประหยัด',
     'svc2-li2': '▸ หาอะไหล่มือสอง',
-    'svc2-li3': '▸ แพ็กนักเรียน / สำนักงาน',
-    'svc2-li4': '▸ สร้างตามสเปคที่ต้องการ',
+    'svc2-li3': '▸ เครื่องนักเรียน / ออฟฟิศ',
+    'svc2-li4': '▸ จัดสเปกตามต้องการ',
 
-    'svc3-title': 'ซัพพอร์ตระยะไกล',
-    'svc3-desc':  'ช่วยเหลือออนไลน์ผ่าน AnyDesk ปรับปรุง Windows ลบไวรัส แก้ปัญหาหน่วง ติดตั้งซอฟต์แวร์ ตั้งค่าเกม',
-    'svc3-li1': '▸ ทำความสะอาด / เร่งพีซี — 100–300฿',
+    'svc3-title': 'ซัพพอร์ตออนไลน์',
+    'svc3-desc':  'ช่วยผ่าน AnyDesk: ปรับแต่ง Windows ลบไวรัส แก้เครื่องหน่วง ลงโปรแกรม ตั้งค่าเกม',
+    'svc3-li1': '▸ ล้างเครื่อง / แก้คอมช้า — 100–300฿',
     'svc3-li2': '▸ ลบไวรัส — 300฿',
-    'svc3-li3': '▸ ติดตั้งซอฟต์แวร์ — 300฿',
+    'svc3-li3': '▸ ลงโปรแกรม — 300–500฿',
     'svc3-li4': '▸ ตั้งค่าเกม',
 
-    'svc4-title': 'อัปเกรดและจัดเก็บข้อมูล',
-    'svc4-desc':  'อัปเกรด RAM SSD HDD CPU GPU กู้คืนข้อมูลที่สูญหาย',
+    'svc4-title': 'อัปเกรด / กู้ข้อมูล',
+    'svc4-desc':  'อัปเกรด RAM, SSD, HDD, CPU, GPU และกู้ไฟล์ที่หาย',
     'svc4-li1': '▸ อัปเกรด RAM / SSD / HDD — 300฿',
     'svc4-li2': '▸ เปลี่ยน CPU / GPU — 300฿',
-    'svc4-li3': '▸ กู้คืนข้อมูล — 500฿',
+    'svc4-li3': '▸ กู้ข้อมูล — 500฿',
 
     'svc5-title': 'แพ็กคู่มือ DIY',
-    'svc5-desc':  'คู่มือ PDF + วิดีโอ สร้างพีซีใต้ 5000฿ เร่งความเร็วพีซี วิธีเลือกอะไหล่มือสองอย่างปลอดภัย',
-    'svc5-li1': '▸ ฟอร์แมต PDF + วิดีโอ',
-    'svc5-li2': '▸ คู่มือสร้างพีซีงบประหยัด',
-    'svc5-li3': '▸ เช็คลิสต์ความปลอดภัย',
-    'svc5-li4': '▸ ส่งดิจิทัล',
+    'svc5-desc':  'คู่มือ PDF + วิดีโอ: ประกอบคอมงบไม่เกิน 5,000฿ ทำให้คอมเร็วขึ้น เลือกอะไหล่มือสองยังไงให้ปลอดภัย',
+    'svc5-li1': '▸ PDF + วิดีโอ',
+    'svc5-li2': '▸ คู่มือประกอบคอมงบประหยัด',
+    'svc5-li3': '▸ เช็คลิสต์ซื้ออะไหล่มือสอง',
+    'svc5-li4': '▸ ดาวน์โหลดเป็นไฟล์',
+
+    'svc6-title': 'รับทำโปรเจกต์ Arduino / ESP32',
+    'svc6-desc':  'งาน Embedded / IoT ตามสั่ง: Arduino, ESP32, เซนเซอร์',
+    'svc6-li1': '▸ Arduino / ESP32',
+    'svc6-li2': '▸ เซนเซอร์และ IoT',
+    'svc6-li3': '▸ ทำตามสเปกที่ต้องการ',
 
     'price-from':    'เริ่มต้น',
     'price-consult': 'ปรึกษา',
     'price-free':    'ฟรี',
     'price-label':   'ราคา',
+    'price-quote':   'ตามงาน',
+    'price-tba':     'เร็วๆ นี้',
 
-    'proj1-name': 'เว็บไซต์ CoreMod v1',
-    'proj1-desc': 'เว็บแบรนด์สไตล์เทอร์มินัล — เว็บนี้',
-    'proj2-name': 'แพ็กคู่มือสร้างพีซีงบประหยัด',
-    'proj2-desc': 'คู่มือ PDF + วิดีโอสำหรับสร้างพีซีใต้ 5000฿',
-    'proj3-name': 'พอร์ทัลติดตามการซ่อม',
-    'proj3-desc': 'ติดตามความคืบหน้าการซ่อมออนไลน์ เร็วๆ นี้',
-    'proj4-name': 'ตลาดอะไหล่มือสอง',
-    'proj4-desc': 'ดรอปชิปอะไหล่พีซีมือสองที่คัดสรรแล้ว',
-    'proj5-name': 'เพิ่มเติมเร็วๆ นี้...',
-    'proj5-desc': 'ระบบกำลังขยาย',
+    'contact-title':  'ติดต่อ',
+    'contact-status': 'ภายใน 24 ชม.',
+    'contact-region': 'เชียงใหม่ (ฝาง, แม่อาย) ซัพพอร์ตออนไลน์ได้ทั่วประเทศ',
 
-    'contact-heading': '// ติดต่อเรา',
-    'contact-status':  '[พร้อมให้บริการ] — ตอบกลับภายใน 24 ชั่วโมง',
-    'contact-region':  'ประเทศไทย',
-
-    'form-name-label':    '// ชื่อของคุณ',
-    'form-email-label':   '// อีเมลของคุณ',
-    'form-service-label': '// บริการที่ต้องการ',
-    'form-msg-label':     '// ข้อความ',
-    'form-name-ph':    'กรอกชื่อ...',
-    'form-email-ph':   'กรอกอีเมล...',
-    'form-msg-ph':     'อธิบายปัญหาหรือสิ่งที่ต้องการ...',
-    'form-submit': '[ ส่งข้อความ ]',
-    'form-opt-0': '-- เลือกบริการ --',
-    'form-opt-1': 'ซ่อมและตรวจสอบพีซี',
-    'form-opt-2': 'สร้างพีซีตามสั่ง',
-    'form-opt-3': 'ซัพพอร์ตระยะไกล',
-    'form-opt-4': 'อัปเกรดและจัดเก็บข้อมูล',
+    'form-name-label':    'ชื่อ',
+    'form-email-label':   'อีเมล',
+    'form-service-label': 'บริการที่ต้องการ',
+    'form-msg-label':     'เครื่องเป็นอะไร',
+    'form-msg-ph':        'เช่น ไฟเข้าแต่จอดำ เปิดไม่ขึ้น',
+    'form-submit':  'ส่งข้อความ',
+    'form-sending': 'กำลังส่ง...',
+    'form-ok':      'ส่งแล้ว เราจะตอบกลับภายใน 24 ชม.',
+    'form-err':     'ส่งไม่สำเร็จ ทักมาทาง LINE @059qaouj หรือ Facebook แทนได้เลย',
+    'form-opt-0': 'เลือกบริการ',
+    'form-opt-1': 'ซ่อมคอม / โน้ตบุ๊ก',
+    'form-opt-2': 'ประกอบคอมตามงบ',
+    'form-opt-3': 'ซัพพอร์ตออนไลน์',
+    'form-opt-4': 'อัปเกรด / กู้ข้อมูล',
     'form-opt-5': 'แพ็กคู่มือ DIY',
     'form-opt-6': 'อื่นๆ',
+    'form-opt-7': 'โปรเจกต์ Arduino / ESP32',
 
-    'footer-slogan': 'เราสร้าง เราซ่อม คุณเล่น',
-    'footer-copy':   '© 2025 CoreMod — ระบบพร้อม',
+    'footer-slogan': 'เราประกอบ เราซ่อม คุณเล่น',
   },
 };
 
 // =====================
 // LANGUAGE SYSTEM
 // =====================
-let currentLang = localStorage.getItem('coremod-lang') || 'en';
+let currentLang = 'th';
+try { currentLang = localStorage.getItem('coremod-lang') || 'th'; } catch (e) {}
 
 function applyLang(lang) {
   const dict = T[lang];
 
-  // Text content
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (dict[key] !== undefined) el.textContent = dict[key];
   });
 
-  // Placeholders
   document.querySelectorAll('[data-i18n-ph]').forEach(el => {
     const key = el.getAttribute('data-i18n-ph');
     if (dict[key] !== undefined) el.placeholder = dict[key];
   });
 
-  // Lang toggle button label (shows opposite language)
+  // Button shows the language you switch to
   document.getElementById('langBtn').textContent = lang === 'en' ? 'TH' : 'EN';
 
   document.documentElement.lang = lang;
-  localStorage.setItem('coremod-lang', lang);
+  try { localStorage.setItem('coremod-lang', lang); } catch (e) {}
   currentLang = lang;
 }
 
@@ -238,14 +243,13 @@ function toggleLang() {
 }
 
 // =====================
-// TERMINAL BOOT
+// TERMINAL BOOT (hero)
 // =====================
 const BOOT_LINES = [
-  '$ coremod --init',
-  '> Booting CoreMod v1.0...',
-  '> Loading service modules... [OK]',
-  '> Remote support online....  [OK]',
-  '> System Ready. Welcome.',
+  '$ coremod --status',
+  '> repair ........... [OK]',
+  '> custom builds .... [OK]',
+  '> remote support ... [OK]',
 ];
 
 let lineIdx = 0;
@@ -268,6 +272,13 @@ function typeNext() {
   }
 }
 
+function showBootInstantly() {
+  LINE_IDS.forEach((id, i) => {
+    const el = document.getElementById(id);
+    if (el) el.textContent = BOOT_LINES[i];
+  });
+}
+
 // =====================
 // NAV
 // =====================
@@ -288,6 +299,7 @@ function updateNav() {
   sections.forEach(sec => {
     if (window.scrollY >= sec.offsetTop - 90) current = sec.id;
   });
+  if (!current) return;
   document.querySelectorAll('.nav-links a').forEach(a => {
     a.classList.toggle('active', a.getAttribute('href') === '#' + current);
   });
@@ -329,8 +341,7 @@ const formStatus = document.getElementById('formStatus');
 if (form) form.addEventListener('submit', async (e) => {
   e.preventDefault();
 
-  const origText = submitBtn.textContent;
-  submitBtn.textContent = currentLang === 'th' ? '[ กำลังส่ง... ]' : '[ Sending... ]';
+  submitBtn.textContent = T[currentLang]['form-sending'];
   submitBtn.disabled = true;
   formStatus.textContent = '';
   formStatus.className = 'form-status';
@@ -341,32 +352,31 @@ if (form) form.addEventListener('submit', async (e) => {
       body: new FormData(form),
     });
     const json = await res.json();
+    if (!json.success) throw new Error(json.message || 'Submission failed.');
 
-    if (json.success) {
-      formStatus.textContent = currentLang === 'th'
-        ? '> ส่งสำเร็จ เราจะตอบกลับภายใน 24 ชั่วโมง'
-        : "> Message sent. We'll reply within 24h.";
-      formStatus.classList.add('success');
-      form.reset();
-    } else {
-      throw new Error(json.message || 'Submission failed.');
-    }
+    formStatus.textContent = T[currentLang]['form-ok'];
+    formStatus.classList.add('success');
+    form.reset();
   } catch (err) {
-    formStatus.textContent = currentLang === 'th'
-      ? '> เกิดข้อผิดพลาด — ติดต่อผ่าน Line: @059qaouj หรือ Facebook'
-      : '> Error — Contact via Line: @059qaouj or Facebook';
+    formStatus.textContent = T[currentLang]['form-err'];
     formStatus.classList.add('error');
   }
 
-  submitBtn.textContent = origText;
+  submitBtn.textContent = T[currentLang]['form-submit'];
   submitBtn.disabled = false;
 });
 
 // =====================
 // INIT
 // =====================
+document.querySelectorAll('.footer-year').forEach(el => {
+  el.textContent = new Date().getFullYear();
+});
+
+applyLang(currentLang);
+updateNav();
+
 window.addEventListener('load', () => {
-  applyLang(currentLang);
-  setTimeout(typeNext, 400);
-  updateNav();
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) showBootInstantly();
+  else setTimeout(typeNext, 400);
 });
